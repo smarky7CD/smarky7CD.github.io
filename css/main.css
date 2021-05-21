@@ -1,0 +1,45 @@
+  body {
+    font-family: Ubuntu, sans-serif;
+    color: #000000;
+    }
+  #name {
+    font-size: 84px;
+    font-weight: 550;
+    }
+  #content {
+    margin-top: 3%;
+   }
+  #main {
+      margin-top: 8%;
+  }
+  a {
+    color: #D4AF37;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #C0C0C0;
+    text-decoration: underline;
+  }
+  a:active {
+    color: #C0C0C0;
+  }
+  a:visited {
+    text-decoration: none;
+  }
+  a:focus{
+   color: #C0C0C0;
+   text-decoration: none;   
+  }
+  .fa {
+    color: #000000;
+    padding: 10px;
+    border: none;
+    text-decoration: none;
+    }
+  .fa:hover {
+    color: #D4AF37;
+    text-decoration: none;
+    }
+  *:focus {
+    outline: none;
+    }

@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/smarky
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://smarky7cd.github.io
+  * I am smarky (https://keybase.io/smarky) on keybase.
+  * I have a public key with fingerprint 0A3A 0E80 AB38 595B ACDA  2416 7832 8989 3CBC 0B32
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101c414f943f268acbb3541e30829b82b8881a62641604cd349bdf3eed9e72a2d760a",
+      "fingerprint": "0a3a0e80ab38595bacda2416783289893cbc0b32",
+      "host": "keybase.io",
+      "key_id": "783289893cbc0b32",
+      "kid": "0101c414f943f268acbb3541e30829b82b8881a62641604cd349bdf3eed9e72a2d760a",
+      "uid": "5018c5fa1bb9303850246f64a0aefc19",
+      "username": "smarky"
+    },
+    "service": {
+      "hostname": "smarky7cd.github.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1528037558,
+  "expire_in": 157680000,
+  "prev": "197edf82334f43b4f7739058a0d36d11f21635f3bfbc4d277394debb89df11a5",
+  "seqno": 44,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.77
+Comment: https://keybase.io/crypto
+
+yMItAnicrVJbSBVBGD520bSCsihNC9rCrMxmdvYyex6KgjIyKh/kUImHmd3Z46bt
+Oe7usdSuVKRdofuDEZQYJBYURRFRaTc0tYsFlkFBhBlqGV2EbrtWD0GPzcsw//99
+33zfz39z5GBfQozdXTNj4+cvs2OabhyL+laN9V0s52hYK+X85VwhG7hYkcZsJ1ho
+aJyfAxBAVYCCrghI5yVMVEqRKECGAOYVinmKMYZE4iUBSkBQNSQoVNMRY5rCZJ7w
+miwBwmVwumGGmBWxDNPxZAkigGFAKMKiIlKiaoR3FWSMeKxgBalUBRTxLrEgbHsM
+1xwlNss0wm7NfQQH7P0D/599RwfkRACxKuoEUqog4HoGvCDpkkAAYboKFQ9oM8sk
+a5iLttcQq7CU25DBubUSQ2XeWL0cf/VlVcsMGU5BlP4KFbHCTlgNF7mAAseJ2H5P
+wCmNeIy1jAZ/awWpYWruMF1GCbNsI2xyfugiVcfwxKHIY4BkUcQZHFsXMSwWNDyE
+KEsYuMf7h5W4klCRmaZjHiFBFxAVdFlGChAxARqSNAh1HkpI1BHVqSpovNcVNEYp
+VjQdQiJyXrpiM8z5BcH1SUJeMCNkEidqMW5D/fW8Ib6YBF/s0EHelvkS4kf92b3t
+vXE/1Ofm1237ptZNz7q/592wXZkfkp68fLw171B7bWLtpJ7vFbEni0PXJlen1Cwf
+ns4lHyxLW7g1sDi1tTzQcu7S6wd3A/FnJ7bvTlqm97+50Jb7oqpuybTKuKTU0TWJ
+J5Y1ffL3LmpqO996tbxqy96Rhvysun/yqxEdgbRT0wvuiWDE8Ri7qyKjaO637Ozx
+q+t7rM2Dnn5vcKJHYajvStXlR3kTjkzoqLi84ki7saWx7/CKt+tuP23tnq92N2d1
+BVLe5yy0P4pZlXHNZsuteZtWThpjx0YeVqpW4pwznfsbdqR25s+MHy+f3tiYfSBH
+b8zvGPekb0ppytKy9OiuO7OSc0cvGLN+ZyD3J6r5QXg=
+=x5r2
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/smarky
+
+==================================================================
