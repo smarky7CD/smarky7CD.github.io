@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://smarky7CD.github.io/sitemap.xml

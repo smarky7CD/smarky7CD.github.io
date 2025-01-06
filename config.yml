@@ -1,0 +1,104 @@
+baseURL: "https://smarky7CD.github.io/"
+title: Sam A. Markelon
+theme: PaperMod
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+
+taxonomies:
+  tag: tags
+
+menu:
+  main:
+    - name: Research
+      url: /research/
+      weight: 1
+    - name: Teaching
+      url: /teaching/
+      weight: 2
+    - name: News
+      url: /news/
+      weight: 3
+
+params:
+  description: "I'm a Ph.D. candidate in Computer Science at the University of Florida. My research interests include Cryptography, Data Structures, and Probabilistic Computing. I am currently a part of the [Florida Institute for Cybersecurity Research](https://fics.institute.ufl.edu/), working under the supervision of [Dr. Vincent Bindschaedler](https://vbinds.ch/) and [Dr. Tom Shrimpton](https://cise.ufl.edu/~teshrim/)."
+  author: Sam A. Markelon
+  # googleAnalyticsID: ""
+  DateFormat: "January 2006"
+  defaultTheme: light
+  hideFooter: true
+  disableThemeToggle: true
+  ShowShareButtons: false
+  ShowReadingTime: false
+  disableSpecial1stPost: true
+  disableAnchoredHeadings: true
+  ShowPostNavLinks: false
+  ShowBreadCrumbs: false
+  ShowCodeCopyButtons: true
+  ShowRssButtonInSectionTermList: false
+  ShowToc: false
+  disableScrollToTop: true
+  TocOpen: true
+  ShowWordCount: false
+  UseHugoToc: true
+  comments: false
+  math: true
+  profileMode:
+    enabled: true
+    title: Sam A. Markelon
+    subtitle: "Hello, my name is Sam! I'm a Ph.D. candidate in Computer Science at the University of Florida. My research interests include Cryptography, Data Structures, and Probabilistic Computing. I am currently a part of the <a href='https://fics.institute.ufl.edu/' target='_blank' style='text-decoration:underline'>Florida Institute for Cybersecurity Research</a>, working under the supervision of <a href='https://vbinds.ch/' target='_blank' style='text-decoration:underline'>Dr. Vincent Bindschaedler</a> and <a href='https://cise.ufl.edu/~teshrim/' target='_blank' style='text-decoration:underline'>Dr. Tom Shrimpton</a>.
+
+     <br><br>
+     My research at UF has focused on the intersection of cryptography and data structures. I have explored how certain classes of data structures behave in adversarial environments. Likewise, I have proposed new and robust versions of these structures that are provably secure. Currently, I am interested in privacy-preserving verifiable data structures and their applications, namely, Key Transparency. 
+     "
+    imageUrl: "/sam.jpeg"
+    imageWidth: 180
+    imageHeight: 180
+    imageTitle: Sam Markelon
+    buttons:
+      - name: Research
+        url: /research/
+      - name: Teaching
+        url: /teaching/
+      - name: News
+        url: /news/
+      
+
+  socialIcons:
+    - name: CV
+      url: "/sam_markelon_CV.pdf"
+    - name: LinkedIn
+      url: "https://www.linkedin.com/in/smarky7cd/"
+    - name: Google Scholar
+      url: "https://scholar.google.com/citations?user=OHrok8MAAAAJ&hl=en&oi=ao"
+    - name: GitHub
+      url: "https://github.com/smarky7CD"
+    - name: Email
+      url: "mailto:markelon@protonmail.com"
+
+  assets:
+    disableHLJS: true
+    disableScrollBarStyle: true
+  cover:
+    hiddenInList: true
+    hiddenInSingle: true
+  label:
+    text: "Sam A. Markelon"
+    icon: /favicon.ico
+    iconHeight: 18
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    guessSyntax: true
+    style: xcode
+  tableOfContents:
+    endLevel: 2
+    ordered: false
+    startLevel: 2
+# max number of characters:
+# * title: 70
+# * description: 120–155
+# * summary: 265
