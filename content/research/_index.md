@@ -220,9 +220,9 @@ Nicholas Brandt, Mia Filić, and  **Sam A. Markelon**
 <summary>Citation</summary>
 
 ```
-@misc{bfm24,
-    author = {Nicholas Brandt and Mia Filić and Sam A. Markelon},
+@misc{bfm24,    
     title = {A Formal Treatment of Key Transparency Systems with Scalability Improvements},
+    author = {Nicholas Brandt and Mia Filić and Sam A. Markelon},
     howpublished = {Cryptology {ePrint} Archive, Paper 2024/1938},
     year = {2024},
     url = {https://eprint.iacr.org/2024/1938}
@@ -252,8 +252,8 @@ Redis (Remote Dictionary Server) is a general purpose, in-memory database that s
 
 ```
 @misc{fhmpu24,
-    author = {Mia Filić and Jonas Hofmann and Sam A. Markelon and Kenneth G. Paterson and Anupama Unnikrishnan},
     title = {Probabilistic Data Structures in the Wild: A Security Analysis of Redis},
+    author = {Mia Filić and Jonas Hofmann and Sam A. Markelon and Kenneth G. Paterson and Anupama Unnikrishnan},
     howpublished = {Cryptology {ePrint} Archive, Paper 2024/1312},
     year = {2024},
     url = {https://eprint.iacr.org/2024/1312}
