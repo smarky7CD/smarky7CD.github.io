@@ -1,0 +1,127 @@
+:root {
+  --navy: #23395B;
+  --gold: #A88F2A;
+}
+
+/* Set *all* body text color to navy, regardless of container */
+body, article, section, p, li, blockquote, footer, span, label {
+  color: var(--navy) !important;
+  font-family: et-book, Palatino, "Palatino Linotype", serif;
+  background-color: #fffff8;
+}
+
+/* Links = gold */
+a {
+  color: var(--gold) !important;
+  text-decoration: underline;
+}
+a:hover {
+  color: var(--navy) !important;
+}
+
+/* Headings */
+h1, h2, h3 {
+  color: var(--gold) !important;
+}
+
+/* Remove extra top margin from article's first headings */
+article h1:first-of-type {
+  margin-top: 0.25em;
+}
+
+.subtitle {
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+/* Sidenotes + Margin Notes */
+.sidenote,
+.marginnote {
+  color: var(--navy) !important;
+  font-style: italic;
+  border-left: 2px solid var(--gold);
+  padding-left: 0.5em;
+}
+
+/* Code Blocks */
+pre, code {
+  background-color: #f0f0f0 !important;
+  color: var(--navy) !important;
+  padding: 0.25em 0.5em;
+  border-radius: 3px;
+}
+
+/* Horizontal rules */
+hr {
+  border: 0;
+  border-top: 1px solid var(--gold);
+  margin: 2em 0;
+}
+
+/* Navigation Bar */
+.navbar {
+  display: block;
+  padding: 1em 0;
+  border-bottom: 1px solid var(--gold);
+  margin-bottom: 0em;
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navbar li {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+}
+
+.navbar a {
+  line-height: 1.2;
+  vertical-align: middle;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  gap: 2em;
+  padding-left: 0;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: var(--gold);
+  font-weight: 500;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.2s ease;
+}
+
+.nav-links li a:hover {
+  border-bottom: 1px solid var(--gold);
+  color: var(--navy);
+}
+
+.nav-links li a.active {
+  border-bottom: 1px solid var(--gold);
+  font-weight: 700; 
+  color: var(--gold);
+}
+
+.news-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.news-list li {
+  margin-bottom: 1.5em;
+}
+
+.gold-date {
+  color: var(--gold) !important; 
+}

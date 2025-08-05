@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Research</title>
+  <link rel="stylesheet" href="ccs/tufte.css">
+  <link rel="stylesheet" href="ccs/custom.css">
+  <link rel="shortcut icon" href="static/images/random_oracle.ico" type="image/x-icon">
+</head>
+<body>
+
+  <nav class="navbar">
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="ro.html">Random Oracle</a></li>
+      <li><a href="research.html" class="active">Research</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+
+ <article>
+    <h1>Research</h1>
+    <p class="subtitle">A list of my academic research publications.</p>
+
+    <section>
+    <p>My academic research interests broadly include cryptography, data structures, randomized algorithms, and probabilistic computing. I imagine these interests will soon shift as I gain more mileage at appointment as a quantitative researcher at <a href="https://www.prooftrading.com/" target="_blank">Proof Trading</a>.</p>
+
+    <p>My PhD work focused on the intersection of cryptography and data structures. I have explored how probabilistic data structures behave in adversarial environments. Likewise, I have proposed new and robust versions of these structures that are provably secure. Lately, I have been interested in privacy-preserving verifiable data structures and their applications, namely, key transparency.</p>
+
+    <p>A list of my academic publications can be found below.
+    <label for="sn-aoc" class="margin-toggle sidenote-number"></label>
+    <input type="checkbox" id="sn-aoc" class="margin-toggle"/>
+    <span class="sidenote">Various author ordering conventions used.</span>
+    PDF versions of each paper can be obtained by clicking on the title of a paper.
+    I also keep my <a href="https://scholar.google.com/citations?user=OHrok8MAAAAJ&hl=en&oi=ao" target="_blank">Google Scholar</a> up to date. Additionally, here is my <a href="https://orcid.org/0009-0004-0968-6165" target="_blank">ORCID</a>.
+    </p>
+    </section>
+
+    <section>
+      <h2>Peer-reviewed Publications</h2>
+
+
+      <p><a href="static/files/fhmpu24.pdf" target="_blank"><strong>Probabilistic Data Structures in the Wild: A Security Analysis of Redis</strong></a><br>
+      Mia Filić, Jonas Hofmann, <strong>Sam A. Markelon</strong>, Kenneth G Paterson, and Anupama Unnikrishnan<br>
+      <a href="https://dl.acm.org/doi/10.1145/3714393.3726491" target="_blank">CODASPY '25 (Best Paper Award)</a>
+      </p>
+
+      <details><summary>Abstract</summary><p>Redis (Remote Dictionary Server) is a general purpose, in-memory database that supports a rich array of functionality, including various Probabilistic Data Structures (PDS), such as Bloom filters, Cuckoo filters, as well as cardinality and frequency estimators. These PDS typically perform well in the average case. However, given that Redis is intended to be used across a diverse array of applications, it is crucial to evaluate how these PDS perform under worst-case scenarios, i.e., when faced with adversarial inputs. We offer a comprehensive analysis to address this question. We begin by carefully documenting the different PDS implementations in Redis, explaining how they deviate from those PDS as described in the literature. Then we show that these deviations enable a total of 10 novel attacks that are more severe than the corresponding attacks for generic versions of the PDS. We highlight the critical role of Redis' decision to use non-cryptographic hash functions in the severity of these attacks. We conclude by discussing countermeasures to the attacks, or explaining why, in some cases, countermeasures are not possible.</p></details>
+      
+      <details><summary>Citation</summary>
+        <pre><code>@inproceedings{fhmpu24,
+        title={Probabilistic data structures in the wild: A security analysis of redis},
+         author={Filić, Mia and Hofmann, Jonas and Markelon, Sam A and Paterson, Kenneth G and Unnikrishnan, Anupama},
+        booktitle={Proceedings of the Fifteenth ACM Conference on Data and Application Security and Privacy},
+        pages={167--178},
+        year={2024}
+        }</code></pre>
+    </details>
+
+
+      <p><a href="static/files/bhmbs24.pdf" target="_blank"><strong>Leveraging Generative Models for Covert Messaging: Challenges and Tradeoffs for "Dead-Drop" Deployments</strong></a><br>
+      Luke A Bauer, James K. Howes, <strong>Sam A. Markelon</strong>, Vincent Bindschaedler, and Thomas Shrimpton<br>
+      <a href="https://dl.acm.org/doi/abs/10.1145/3626232.3653264" target="_blank">CODASPY '24</a></p>
+
+      <details><summary>Abstract</summary><p>State of the art generative models of human-produced content are the focus of many recent papers that explore their use for steganographic communication. In particular, generative models of natural language text. Loosely, these works (invertibly) encode message-carrying bits into a sequence of samples from the model, ultimately yielding a plausible natural language covertext. By focusing on this narrow steganographic piece, prior work has largely ignored the significant algorithmic challenges, and performance-security tradeoffs, that arise when one actually tries to build a messaging pipeline around it. We make these challenges concrete, by considering the natural application of such a pipeline: namely, "dead-drop" covert messaging over large, public internet platforms (e.g. social media sites). We explicate the challenges and describe approaches to overcome them, surfacing in the process important performance and security tradeoffs that must be carefully tuned. We implement a system around this model-based format-transforming encryption pipeline, and give an empirical analysis of its performance and (heuristic) security.</p></details>
+
+      <details><summary>Citation</summary>
+        <pre><code>@inproceedings{bhmbs24,
+        title={Leveraging Generative Models for Covert Messaging: Challenges and Tradeoffs for" Dead-Drop" Deployments},
+        author={Bauer, Luke A and Howes, James K and Markelon, Sam A and Bindschaedler, Vincent and Shrimpton, Thomas},
+        booktitle={Proceedings of the Fourteenth ACM Conference on Data and Application Security and Privacy},
+        pages={67--78},
+        year={2024} 
+        }
+    </code></pre>
+    </details>
+
+      <p><a href="static/files/mfs23.pdf" target="_blank"><strong>Compact Frequency Estimators in Adversarial Environments</strong></a><br>
+      <strong>Sam A. Markelon</strong>, Mia Filić, and Thomas Shrimpton<br>
+      <a href="https://dl.acm.org/doi/abs/10.1145/3576915.3623216" target="_blank">CCS '23</a></p>
+      
+      <details><summary>Abstract</summary><p>Count-Min Sketch (CMS) and HeavyKeeper (HK) are two realizations of a compact frequency estimator (CFE). These are a class of probabilistic data structures that maintain a compact summary of (typically) high-volume streaming data, and provides approximately correct estimates of the number of times any particular element has appeared. CFEs are often the base structure in systems looking for the highest-frequency elements (i.e., top-K elements, heavy hitters, elephant flows). Traditionally, probabilistic guarantees on the accuracy of frequency estimates are proved under the implicit assumption that stream elements do not depend upon the internal randomness of the structure. Said another way, they are proved in the presence of data streams that are created by non-adaptive adversaries. Yet in many practical use-cases, this assumption is not well-matched with reality; especially, in applications where malicious actors are incentivized to manipulate the data stream. We show that the CMS and HK structures can be forced to make significant estimation errors, by concrete attacks that exploit adaptivity. We analyze these attacks analytically and experimentally, with tight agreement between the two. Sadly, these negative results seem unavoidable for (at least) sketch-based CFEs with parameters that are reasonable in practice. On the positive side, we give a new CFE (Count-Keeper) that can be seen as a composition of the CMS and HK structures. Count-Keeper estimates are typically more accurate (by at least a factor of two) than CMS for "honest" streams; our attacks against CMS and HK are less effective (and more resource intensive) when used against Count-Keeper; and Count-Keeper has a native ability to flag estimates that are suspicious, which neither CMS or HK (or any other CFE, to our knowledge) admits.</p></details>
+      
+      <details><summary>Citation</summary>
+        <pre><code>@inproceedings{mfs23,
+        title={Compact Frequency Estimators in Adversarial Environments},
+        author={Markelon, Sam A and Filic, Mia and Shrimpton, Thomas},
+        booktitle={Proceedings of the 2023 ACM SIGSAC Conference on Computer and Communications Security},
+        pages={3254--3268},
+        year={2023}
+        }</code></pre>
+        </details>
+
+      <p><a href="static/files/mt22.pdf" target="_blank"><strong>The DecCert PKI:A Solution to Decentralized Identity Attestation and Zooko’s Triangle</strong></a><br>
+      <strong>Sam A. Markelon</strong> and John True<br>
+      <a href="https://ieeexplore.ieee.org/abstract/document/9899851" target="_blank">DAPPS '22 (Best Paper Award.)</a></p>
+
+      <details><summary>Abstract</summary><p>We propose DecCert, a decentralized public key infrastructure designed as a smart contract that solves the problem of identity attestation on public blockchains. Our system allows an individual to bind an identity to a public blockchain address. Once a claim of identity is made by an individual, other users can choose to verify the attested identity based on the evidence presented by an identity claim maker by staking cryptocurrency in the DecCert smart contract. Increasing levels of trust are naturally built based upon the amount staked and the duration the collateral is staked for. This mechanism replaces the usual utilization of digital signatures in a traditional hierarchical certificate authority model or the web of trust model to form a publicly verifiable decentralized stake of trust model. We also present a novel solution to the certificate revocation problem and implement our solution on the Ethereum blockchain. Further, we show that our design solves Zooko’s triangle as defined for public key infrastructure deployments</p></details>
+      
+      <details><summary>Citation</summary>
+        <pre><code>@inproceedings{mt22,
+        title={The DecCert PKI: A Solution to Decentralized Identity Attestation and Zooko’s Triangle},
+        author={Markelon, Sam A and True, John},
+        booktitle={2022 IEEE International Conference on Decentralized Applications and Infrastructures (DAPPS)},
+        pages={74--82},
+        year={2022},
+        organization={IEEE}
+        }</code></pre>
+    </details>
+
+      <p><a href="static/files/km20.pdf" target="_blank"><strong>A semi-quantum extended B92 protocol and its analysis</strong></a><br>
+      Walter O. Krawec and <strong>Sam A. Markelon</strong><br>
+      <a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/11391/113910G/A-semi-quantum-extended-B92-protocol-and-its-analysis/10.1117/12.2558200.short" target="_blank">Quantum Information Science, Sensing, and Computation XII</a></p>
+
+      <details><summary>Abstract</summary><p>Unlike purely classical communication, unconditionally secure key distribution is possible if Alice and Bob are both equipped with quantum hardware. The degree to which a protocol needs to be quantum is not only an interesting theoretical question, but also important for practical implementations. Indeed, one may wish to construct cheaper devices, or compensate for device malfunction. In this sense, studying limited resource QKD protocols is an important problem. One direction to studying this is the semi-quantum model introduced by Boyer et al. in 2007 (PRL 99 140501). Several provably secure semi-quantum protocols were put forth. However, most of these protocols were proven secure in the perfect qubit scenario and not necessarily against practical attacks. Only recently, starting with seminal work of Boyer, Katz, Liss, and Mor in (PRA 96 062335) has research in the field of semi-quantum cryptography considered practical devices and imperfections, such as multi photon sources and imperfect detectors. In this work, we present a new SQKD protocol based on an Extended B92 protocol which is able to counter certain practical attacks. Furthermore, the techniques we use may see broad application to other limited-resource (S)QKD protocols.</p></details>
+
+      <details><summary>Citation</summary><pre><code>@inproceedings{km20,
+        title={A semi-quantum extended B92 protocol and its analysis},
+        author={Krawec, Walter O and Markelon, Sam A},
+        booktitle={Quantum Information Science, Sensing, and Computation XII},
+        volume={11391},
+        pages={47--55},
+        year={2020},
+        organization={SPIE}
+    }</code></pre></details>
+
+      <p><a href="static/files/km18.pdf" target="_blank"><strong>Genetic algorithm to study practical quantum adversaries</strong></a><br>
+      Walter O. Krawec and <strong>Sam A. Markelon</strong><br>
+      <a href="https://dl.acm.org/doi/abs/10.1145/3205455.3205478" target="_blank">GECCO '18</a></p>
+      
+      <details><summary>Abstract</summary><p>In this paper we show how genetic algorithms can be effectively applied to study the security of arbitrary quantum key distribution (QKD) protocols when faced with adversaries limited to current-day technology. We compare two approaches, both of which take into account practical limitations on the quantum power of an adversary (which can be specified by the user). Our system can be used to determine upper-bounds on noise tolerances of novel QKD protocols in this scenario, thus making it a useful tool for researchers. We compare our algorithm's results with current known numerical results, and also evaluate it on newer, more complex, protocols where no results are currently known.</p></details>
+      
+      <details><summary>Citation</summary><pre><code>@inproceedings{km18,
+    title={Genetic algorithm to study practical quantum adversaries},
+    author={Krawec, Walter O and Markelon, Sam A},
+    booktitle={Proceedings of the Genetic and Evolutionary Computation Conference},
+    pages={1270--1277},
+    year={2018}
+    }</code></pre></details>
+    </section>
+
+    <section>
+      <h2>Pre-prints</h2>
+
+      <p><a href="static/files/bfm24.pdf" target="_blank"><strong>SoK: On the Security Goals of Key Transparency Systems</strong></a><br>
+      Nicholas Brandt, Mia Filić, and <strong>Sam A. Markelon</strong></p>
+
+      <details><summary>Abstract</summary><p>
+        
+        Key Transparency (KT) systems have emerged as a critical technology for adding verifiability to the distribution of public keys used in end-to-end encrypted messaging services. Despite substantial academic interest, increased industry adoption, and IETF standardization efforts, KT systems lack a holistic and formalized security model, limiting their resilience to practical threats and constraining future development.
+        
+        In this paper, we survey the existing KT literature and present the first cryptographically sound formalization of KT as an ideal functionality. Our work clarifies the underlying assumptions, defines core security properties, and highlights potential vulnerabilities in deployed KT systems. We prove in the Universal Composability framework that our concrete protocol achieves KT security as defined by our formalism. Our KT protocol builds on the latest trends in KT design, guided by the formalization.
+      </p></details>
+
+      <details><summary>Citation</summary><pre><code>@misc{bfm24,
+      author = {Nicholas Brandt and Mia Filić and Sam A. Markelon},
+      title = {{SoK}: On the Security Goals of Key Transparency Systems},
+      howpublished = {Cryptology {ePrint} Archive, Paper 2024/1938},
+      year = {2024},
+      url = {https://eprint.iacr.org/2024/1938}
+    }</code></pre></details>
+    
+    </section>
+  </article>
+
+</body>
+</html>
