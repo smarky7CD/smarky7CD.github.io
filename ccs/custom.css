@@ -125,3 +125,23 @@ hr {
 .gold-date {
   color: var(--gold) !important; 
 }
+
+.post-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.post-list li {
+  margin-bottom: 0.75em;
+}
+
+.post-list a {
+  color: var(--gold);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.post-list a:hover {
+  text-decoration: underline;
+  color: var(--navy);
+}
