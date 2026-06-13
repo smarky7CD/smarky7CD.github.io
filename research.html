@@ -22,20 +22,43 @@
 
  <article>
     <h1>Research</h1>
-    <p class="subtitle">A list of my academic research publications.</p>
+    <p class="subtitle">A list of my research publications.</p>
 
     <section>
-    <p>My academic research interests broadly include quantitative finance, cryptography, data structures, randomized algorithms, and probability in computing.
+    <p>My academic research interests broadly include quantitative finance, cryptography, data structures, randomized algorithms, and probability in computing. My focus nowadays in largely on applying quantitative techniques for market microstructure research and for the tactical layer of algorithmic trading systems.</p>
 
     <p>My PhD work focused on the intersection of cryptography and data structures. I have explored how probabilistic data structures behave in adversarial environments. Likewise, I have proposed new and robust versions of these structures that are provably secure. I also was interested in (privacy-preserving) verifiable data structures and their applications, namely, key transparency.</p>
 
-    <p>A list of my academic publications can be found below.
+    <p>A list of my publications can be found below.
     <label for="sn-aoc" class="margin-toggle sidenote-number"></label>
     <input type="checkbox" id="sn-aoc" class="margin-toggle"/>
     <span class="sidenote">Various author ordering conventions used.</span>
     PDF versions of each paper can be obtained by clicking on the title of a paper.
     I also keep my <a href="https://scholar.google.com/citations?user=OHrok8MAAAAJ&hl=en&oi=ao" target="_blank">Google Scholar</a> up to date. Additionally, here is my <a href="https://orcid.org/0009-0004-0968-6165" target="_blank">ORCID</a>.
     </p>
+    </section>
+
+    <section>
+      <h2>White papers</h2>
+
+
+      <p><a href="static/files/bmos26.pdf" target="_blank"><strong>On A/B Testing and the Benefits of Knowing Why</strong></a><br>
+       Allison Bishop, <strong>Sam A. Markelon</strong>, Lisa Oakley, and Adele Shahi<br>
+      <a href="https://prooftrading.com/research/" target="_blank">Proof Trading Research</a>
+      </p>
+
+      <details><summary>Abstract</summary><p>A framework for modeling algo behavior and reducing noise in estimates of parent order slippage. We develop a framework for transferring insights about trading behavior at shorter timescales to projections of trading behavior at longer timescales, in a way that can more quickly produce an accurate understanding of the longer timescale effects. This can be useful for A/B testing of trading algo implementations, as well as for TCA.</p></details>
+      
+      <details><summary>Citation</summary>
+        <pre><code>@article{bmos26,
+          title = {On A/B Testing and the Benefits of Knowing Why},
+          author = {Bishop, Allison and Markelon, Sam and Oakley, Lisa and Shahi, Adele},
+          url = {https://prooftrading.com/docs/AlgoWorkerMetric.pdf},
+          year = {2026}
+        }</code></pre>
+    </details>
+
+
     </section>
 
     <section>
@@ -49,7 +72,7 @@
       <details><summary>Abstract</summary><p>Probabilistic data structures like hash tables, skip lists, and treaps support efficient operations through randomized hierarchies that enable "skipping" elements, achieving sub-linear query complexity on average for perfectly correct responses. They serve as critical components in performance-sensitive systems where correctness is essential and efficiency is highly desirable. While simpler than deterministic alternatives like balanced search trees, these structures traditionally assume that input data are independent of the structure’s internal randomness and state - an assumption questionable in malicious environments - potentially leading to a significantly increased query complexity. We present adaptive attacks on all three aforementioned structures that, in the case of hash tables and skip lists, cause exponential degradation compared to the inputindependent setting. While efficiency-targeting attacks on hash tables are well-studied, our attacks on skip lists and treaps provide new insights into vulnerabilities of skipping-based probabilistic data structures. Next, we propose simple and efficient modifications to the original designs of these data structures to provide provable security against adaptive adversaries. Our approach is formalized through Adaptive Adversary Property Conservation (AAPC), a general security notion that captures deviation from the expected efficiency guarantees in adversarial scenarios. We use this notion to present rigorous robustness proofs for our versions of the data structures. Lastly, we perform experiments whose empirical results closely agree with our analytical results.</p></details>
       
       <details><summary>Citation</summary>
-        <pre><code>@inproceedings{fischlin2025probabilistic,
+        <pre><code>@inproceedings{fhm25,
           title={Probabilistic Skipping-Based Data Structures with Robust Efficiency Guarantees},
           author={Fischlin, Marc and Huppert, Moritz and Markelon, Sam A},
           booktitle={Proceedings of the 2025 ACM SIGSAC Conference on Computer and Communications Security},
