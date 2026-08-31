@@ -183,6 +183,22 @@
     <section>
       <h2>Pre-prints</h2>
 
+      <p><a href="static/files/tmbm26.pdf" target="_blank"><strong>Context Compaction Theory</strong></a><br>
+       Hayder Tirmazi, <strong>Sam A. Markelon</strong>, Allison Bishop, and Michael Mitzenmacher</p>
+
+      <details><summary>Abstract</summary><p>
+        
+       Large Language Models (LLMs) have a bounded context window. The context window is the maximum input size an LLM can consume for a single inference. AI agents rely on a process called context compaction to fit their state within the context window when calling an LLM. Despite its ubiquity, context compaction has received essentially no formal analysis. In this paper, we initiate a formal study of context compaction. We first introduce a framework consisting of two games that capture the two algorithmic strategies for context compaction used by contemporary AI agents in practice. The Context Selection Game models context compaction algorithms that select a subset of an agent's accumulated state to retain. The Context Generation Game models context compaction algorithms that summarize an agent's state by an arbitrary message of bounded length. We then prove an equivalence between the Context Generation Game and one-way communication complexity. The minimum context compaction budget for answering a set of queries within a target error is equal to the one-way communication complexity of the induced communication problem at the same error. Known bounds from communication complexity therefore transfer directly to context compaction. We also show that the Context Selection Game corresponds to a restricted class of one-way communication protocols. Any gap between selection and generation is therefore a gap between two classes of communication protocols. We prove that there exists a set of queries for which generation needs strictly less budget than selection. The equivalence between the Context Generation Game and one-way communication also lets us measure how well a deployed context compaction algorithm performs on a query relative to the optimal strategy. As an example, we present a case study that evaluates Anthropic's context compaction endpoint on set membership queries.
+      </p></details>
+
+      <details><summary>Citation</summary><pre><code>@misc{tirmazi2026context,
+        title={Context Compaction Theory},
+        author={Tirmazi, Hayder and Markelon, Sam and Bishop, Allison and Mitzenmacher, Michael},
+        journal={arXiv preprint arXiv:2608.01326},
+        year={2026},
+        url={https://arxiv.org/abs/2608.01326}
+    }</code></pre></details>
+
       <p><a href="static/files/bfm24.pdf" target="_blank"><strong>SoK: On the Security Goals of Key Transparency Systems</strong></a><br>
       Nicholas Brandt, Mia Filić, and <strong>Sam A. Markelon</strong></p>
 
